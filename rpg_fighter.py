@@ -1,6 +1,5 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -24,7 +23,7 @@ def get_character_race():
         print("Data should be 6 DnD race names, seperated by commas.")
         print("Example: Orc, Dragonborn, bugbear, skeleton\n")
 
-        data_str = input("Enter npc races here: ")
+        data_str = input("Enter npc races here:\n")
 
         character_race = data_str.split(",")
 
