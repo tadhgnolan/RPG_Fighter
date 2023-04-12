@@ -21,7 +21,7 @@ def get_character_race():
     while True:
         print("Please enter NPC character race.")
         print("Data should be 6 DnD race names, seperated by commas.")
-        print("Example: Orc, Dragonborn, bugbear, skeleton\n")
+        print("Example: Orc, Dragonborn, bugbear, skeleton, elf, human\n")
 
         data_str = input("Enter npc races here:\n")
 
