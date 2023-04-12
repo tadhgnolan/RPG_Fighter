@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -19,7 +20,7 @@ def get_character_race():
     Run a while loop to collect a valid string of data from the user via the terminal, which must be a string of 6 values seperated by commas. The loop will repeatedly request data until it is valid.
     """
     while True:
-        print("Please enter npc character race.")
+        print("Please enter NPC character race.")
         print("Data should be 6 DnD race names, seperated by commas.")
         print("Example: Orc, Dragonborn, bugbear, skeleton\n")
 
@@ -60,5 +61,27 @@ def update_npc_worksheet(data):
     print("NPC worksheet updated successfully.\n")
 
 
-data = get_character_race()
-update_npc_worksheet(data)
+def get_last_entry_characer_race():
+    """
+    Collect last row of data from NPCs worksheet returning the data as a list
+    """
+    npc_races = SHEET.worksheet("npcs")
+    columns = []
+    for ind in range(1, 7):
+        column = npc_races.col_values(ind)
+        columns.append(column[-1:])
+
+    return columns
+
+
+def main():
+    """
+    Run all program functions
+    """
+    data = get_character_race()
+    update_npc_worksheet(data)
+    npc_list = get_last_entry_characer_race()
+
+
+print("Welcome to RPG_Fighter NPC Generator")
+main()
