@@ -17,14 +17,20 @@ def get_character_race():
     """
     Get npc character race input from the user
     """
-    print("Please enter npc character race.")
-    print("Data should be 6 DnD race names, seperated by commas.")
-    print("Example: Orc, Dragonborn, bugbear, skeleton\n")
+    while True:
+        print("Please enter npc character race.")
+        print("Data should be 6 DnD race names, seperated by commas.")
+        print("Example: Orc, Dragonborn, bugbear, skeleton\n")
 
-    data_str = input("Enter npc races here: ")
+        data_str = input("Enter npc races here: ")
 
-    character_race = data_str.split(",")
-    validate_data(character_race)
+        character_race = data_str.split(",")
+        
+        if validate_data(character_race):
+            print("Data is valid!")
+            break
+            
+return character_race
 
 
 def validate_data(values):
@@ -38,6 +44,7 @@ def validate_data(values):
             )
     except ValueError as e:
         print(f"Invalid data: {e}, please try again.\n")
+        return False
+    return True
 
-
-get_character_race()
+character_race = get_character_race()
