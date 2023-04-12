@@ -13,6 +13,10 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('RPGFighter')
 
 
+NPC_STATS = []
+
+
+
 def get_character_race():
     """
     Get npc character race input from the user.
@@ -21,9 +25,23 @@ def get_character_race():
     while True:
         print("Please enter NPC character race.")
         print("Data should be 6 DnD race names, seperated by commas.")
-        print("Example: Orc, Dragonborn, bugbear, skeleton, elf, human\n")
+        print("Example: orc, goblin, halfling, troll, dwarf, skeleton, elf, human\n")
 
-        data_str = input("Enter npc races here:\n")
+        data_str = ""
+        for i in range(6):
+            while True:
+                user_npc = input(f"Enter npc race #{i + 1} here:\n").lower().strip()
+                races = ["orc", "halfling", "goblin", "troll", "dwarf", "skeleton", "elf", "human"]
+                if user_npc not in races:
+                    print("Invalid race, try again.")
+                else:
+                    if i <= 4:
+                        data_str += user_npc + ","
+                        break
+                    else:
+                        data_str += user_npc
+                        break
+        #data_str = input("Enter npc races here:\n")
 
         character_race = data_str.split(",")
 
@@ -60,17 +78,32 @@ def update_npc_worksheet(data):
     print("NPC worksheet updated successfully.\n")
 
 
-def get_last_entry_characer_race():
+def get_last_entry_characer_race(npc):
     """
     Collect last row of data from NPCs worksheet returning the data as a list
     """
-    npc_races = SHEET.worksheet("npcs")
+    npc_races = SHEET.worksheet("npc_stats")
     columns = []
-    for ind in range(1, 7):
+    for ind in range(1, 10):
         column = npc_races.col_values(ind)
-        columns.append(column[-1:])
+        if npc.lower().strip() == column[0].lower().strip():
+
+            NPC_STATS.append(column)
+            columns.append(column[-1:])
 
     return columns
+
+
+def display_stats():
+    for npc in NPC_STATS:
+        print(f"Race: {npc[0]}")
+        print(f"Strength: {npc[1]}")
+        print(f"Dexterity: {npc[2]}")
+        print(f"Constituion: {npc[3]}")
+        print(f"Intelligence: {npc[4]}")
+        print(f"Wisdom: {npc[5]}")
+        print(f"Charisma: {npc[6]}")
+        print("")
 
 
 def main():
@@ -79,7 +112,10 @@ def main():
     """
     data = get_character_race()
     update_npc_worksheet(data)
-    npc_list = get_last_entry_characer_race()
+    for npc in data:
+        get_last_entry_characer_race(npc)
+    display_stats()
+    #npc_list = get_last_entry_characer_race()
 
 
 print("Welcome to RPG_Fighter NPC Generator")
