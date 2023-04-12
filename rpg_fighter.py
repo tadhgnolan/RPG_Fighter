@@ -18,11 +18,26 @@ def get_character_race():
     Get npc character race input from the user
     """
     print("Please enter npc character race.")
-    print("Data should be DnD race name, seperated by commas.")
+    print("Data should be 6 DnD race names, seperated by commas.")
     print("Example: Orc, Dragonborn, bugbear, skeleton\n")
 
     data_str = input("Enter npc races here: ")
-    print(f"The npc races you provided were {data_str}")
+
+    character_race = data_str.split(",")
+    validate_data(character_race)
+
+
+def validate_data(values):
+    """
+    Inside the try, raises ValueError if there aren't exactly 6 values.
+    """
+    try:
+        if len(values) != 6:
+            raise ValueError(
+                f"Exactly 6 values required, you provided {len(values)}"
+            )
+    except ValueError as e:
+        print(f"Invalid data: {e}, please try again.\n")
 
 
 get_character_race()
