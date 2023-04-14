@@ -110,11 +110,17 @@ def main():
     """
     Run all program functions
     """
-    data = get_character_race()
-    update_npc_worksheet(data)
-    for npc in data:
-        get_last_entry_characer_race(npc)
-    display_stats()
+    while True:
+        data = get_character_race()
+        update_npc_worksheet(data)
+        for npc in data:
+            get_last_entry_characer_race(npc)
+        display_stats()
+        check = input("Do you wish to quit or start again? Enter Y to restart or another key to exit: ")
+        if check.upper() == "Y": #go back to the top
+            continue
+        print("Thanks for using the RPG Fighter, goodbye!")
+        break #exit
     #npc_list = get_last_entry_characer_race()
 
 
