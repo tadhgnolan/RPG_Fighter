@@ -1,68 +1,84 @@
-# RPG Fighter
+# RPG FIGHTER
+
+![Device Mockup Image](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/Device_Mock_Up.PNG)
+
+# Table of Contents
+1. [Intro](#intro)
+2. [Technologies](#technologies)
+3. [Features](#features)
+4. [Testing](#testing)
+5. [Credits](#credits)
+6. [Deployment](deployment)
+
+## Intro
+
+RPG Fighter is a app for tabletop roleplaying game Dungeon Masters or players that allows them to retrieve a list of statistic scores (stats) for a set of Non-Player-Characters (NPCs) by name.
 
 ## UX
+
 
 ## User Stories
 
 ### New Site Users
 
-- As a new site user, I would like to input a list of NPCs (Non-Player-Characters) so that I can obtain a list of statistics for each character.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-
-### Returning Site Users
-
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-
-### Site Admin
-
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-
-## Wireframes
-
-![Wireframe_1](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/WF1.png)
-![Wireframe_2](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/WF2.png)
+- As site user, I would like clear instructions on how to use the app.
+- As a site user, I would like to be able to input a selection of Non-Player-Characters (NPCs).
+- As a site user, I would like confirmation that the worksheet has been updated with the data I've entered, so that I can be sure I will receive the correct response.
+- As a site user, I would like to see the full list of details for the NPC names that I've entered, so that I can take note of them for the game I'm planning.
+- As a site user, I would like to be asked if I wish to continue, so that I can either start again or exit the app.
 
 ## Features
 
 ### Existing Features
 
-- **Title for feature #1**
+- **Get Character Race**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Function prints a welcome message and instructions, then takes input of user_npc and while loop checks that 6 inputs are made matching the pre-existing list of NPCs.
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/images/feature01.png)
+![screenshot](documentation/images/feature01.1.png)
+![screenshot](documentation/images/feature01.2.png)
 
-- **Title for feature #2**
+- **Validate Data**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Inside the try, function raises ValueError if there aren't exactly 6 values 
 
-![screenshot](documentation/feature02.png)
+![screenshot](documentation/imagesfeature02.png)
 
-- **Title for feature #3**
+- **Update NPC Worksheet**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Function takes character_race list and adds it to worksheet as a new row.
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/images/feature03.png)
+![screenshot](documentation/imagesfeature03.1.png)
+
+- **Get Last Entry Character Race**
+
+    - Function collects last row of data from NPCs worksheet and returns the data as a list.
+
+![screenshot](documentation/images/feature04.png)
+
+- **Display State**
+
+    - Function prints stats for each NPC in an easily readable format.
+
+![screenshot](documentation/images/feature05.png)
+![screenshot](documentation/imagesfeature05.1.png)
+
+- **Main**
+
+    - Runs all program functions.
+
+![screenshot](documentation/images/feature06.png)
 
 ### Future Features
 
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Random Player Character Generator
+    - Creates a player character with a random set of stats.
+- Random NPC Generator
+    - Creates an NPC with a ranpm set of stats
+- Fight
+    - Functions that allow Player Character to fight NPC through application of random dice rolls and their interaction with a clearly defined ruleset.
 
 ## Tools & Technologies Used
 
@@ -101,18 +117,30 @@ class Person:
 
 The primary functions used on this application are:
 
+- `get_character_race()`
+    - Get character race from the user.
+- `validate_data()`
+    - Checks that user has entered 6 values.
+- `update_npc_worksheet()`
+    - Update the relevant worksheet with the data provided.
+- `get_last_entry_character_race(npc)`
+    - Collects last row of data from NPCs worksheet.
+- `display_stats()`
+    - Displays NPC Stats.
+- `main()`
+    - Run all program functions.
+
 ### Imports
 
 I've used the following Python packages and/or external imported packages.
 
 - `gspread`: used with the Google Sheets API
 - `google.oauth2.service_account`: used for the Google Sheets API credentials
-- `time`: used for adding time delays
-- `os`: used for adding a `clear()` function
-- `colorama`: used for including color in the terminal
-- `random`: used to get a random choice from a list
 
 ## Testing
+
+- Manual testing of user inputs.
+- Automated testing of validate function with Unittest.
 
 ## Deployment
 
@@ -198,30 +226,28 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-### Local VS Deployment
-
 ## Credits
 
-### Content
 
+
+### Content
 
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
+| [Editor.md](https://pandao.github.io/editor.md/index.html) | README.MD| open source online Markdown Editor |
+| [Code Institute](https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode/tree/master/05-deployment/01-deployment-part-1) | rpg_fighter.py | Love Sandwitches repo on Github
+| [Juan Carlos Paco](https://gist.github.com/juancarlospaco/040fbe326631e638f2a540fe8c1f2092) | test_rpg_fighter.py | unittest doctests template |
 
 ### Media
-
-| Source | Location | Type | Notes |
-| --- | --- | --- | --- |
-
-
+| Source | Location |
+| --- | --- |
+| [Artscene](http://artscene.textfiles.com/asciiart/dragon.txt) | Dragon head ASCII art. |
 ### Acknowledgements
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 - I would like to thank my partner Rossana, for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my brother Cormac, an active developer, for his help and support thoughout the project.
+- I would like to thank my brother Cormac, working developer, for his help reviewing the project.
