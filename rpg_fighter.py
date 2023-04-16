@@ -1,3 +1,8 @@
+"""
+Module and authorization credentials for Google Sheets API.
+Needed to store inputs and retrieve NPC Stats
+"""
+
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -16,28 +21,45 @@ SHEET = GSPREAD_CLIENT.open('RPGFighter')
 NPC_STATS = []
 
 
-
 def get_character_race():
     """
     Get npc character race input from the user.
-    Run a while loop to collect a valid string of data from the user via the terminal, which must be a string of 6 values seperated by commas. The loop will repeatedly request data until it is valid.
+    Run a while loop to collect a valid string of data from the user
+    via the terminal, which must be a string of 6 values.
+    The loop will repeatedly request data until it is valid.
     """
     while True:
         print("#  (    )  #")
-        print("#  |\^^/|  #")
+        print("#  |\^^/|  #")  # noqa
         print("#  (0::0)  #")
-        print("#   \\\//   #")
+        print("#   \\\//   #")  # noqa
         print("#   (OO)   #")
-        print("#    \/    #")
+        print("#    \/    #")  # noqa
         print("Please enter NPC character race.")
-        print("Data should be 6 DnD race names, seperated by commas.")
-        print("Example: orc, goblin, halfling, troll, dwarf, skeleton, elf, human\n")
+        print("Data should be 6 DnD race names.")
+        print(
+            "Example: orc, goblin, halfling, troll, "
+            + "dwarf, skeleton, elf, human\n"
+        )
 
         data_str = ""
         for i in range(6):
             while True:
-                user_npc = input(f"Enter npc race #{i + 1} here:\n").lower().strip()
-                races = ["orc", "halfling", "goblin", "troll", "dwarf", "skeleton", "elf", "human"]
+                user_npc = (
+                    input(f"Enter npc race #{i + 1} here:\n")
+                    .lower()
+                    .strip()
+                )
+                races = [
+                    "orc",
+                    "halfling",
+                    "goblin",
+                    "troll",
+                    "dwarf",
+                    "skeleton",
+                    "elf",
+                    "human",
+                ]
                 if user_npc not in races:
                     print("Invalid race, try again.")
                 else:
@@ -100,6 +122,9 @@ def get_last_entry_characer_race(npc):
 
 
 def display_stats():
+    """
+    Displays NPC Stats in an easy to read manner.
+    """
     for npc in NPC_STATS:
         print(f"Race: {npc[0]}")
         print(f"Strength: {npc[1]}")
@@ -121,12 +146,16 @@ def main():
         for npc in data:
             get_last_entry_characer_race(npc)
         display_stats()
-        check = input("Do you wish to quit or start again? Enter Y to restart or another key to exit: ")
-        if check.upper() == "Y": #go back to the top
+        check = input(
+            "Do you wish to quit or start again?"
+            + " Enter Y to restart or another key to exit: "
+        )
+        if check.upper() == "Y":  # go back to the top
             continue
         print("Thanks for using the RPG Fighter, goodbye!")
-        break #exit
+        break  # exit
 
 
-print("Welcome to RPG_Fighter NPC Generator")
-main()
+if __name__ == "__main__":
+    print("Welcome to RPG_Fighter NPC Generator")
+    main()
