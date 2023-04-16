@@ -23,6 +23,12 @@ def get_character_race():
     Run a while loop to collect a valid string of data from the user via the terminal, which must be a string of 6 values seperated by commas. The loop will repeatedly request data until it is valid.
     """
     while True:
+        print("#  (    )  #")
+        print("#  |\^^/|  #")
+        print("#  (0::0)  #")
+        print("#   \\\//   #")
+        print("#   (OO)   #")
+        print("#    \/    #")
         print("Please enter NPC character race.")
         print("Data should be 6 DnD race names, seperated by commas.")
         print("Example: orc, goblin, halfling, troll, dwarf, skeleton, elf, human\n")
@@ -41,7 +47,6 @@ def get_character_race():
                     else:
                         data_str += user_npc
                         break
-        #data_str = input("Enter npc races here:\n")
 
         character_race = data_str.split(",")
 
@@ -121,7 +126,6 @@ def main():
             continue
         print("Thanks for using the RPG Fighter, goodbye!")
         break #exit
-    #npc_list = get_last_entry_characer_race()
 
 
 print("Welcome to RPG_Fighter NPC Generator")
