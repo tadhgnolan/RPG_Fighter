@@ -1,6 +1,8 @@
 """
 Module and authorization credentials for Google Sheets API.
-Needed to store inputs and retrieve NPC Stats
+Needed to store inputs and retrieve NPC Stats.
+Main code structure taken from Love Sandwitches by Code Institute
+(See Readme for link to repo.).
 """
 
 import gspread
