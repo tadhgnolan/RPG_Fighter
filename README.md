@@ -1,7 +1,7 @@
 # RPG FIGHTER
 
 ![Device Mockup Image](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/mockup.png)
-
+![RPG Fighter live example](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/demo.gif)
 # Table of Contents
 1. [Intro](#intro)
 2. [Technologies](#technologies)
@@ -35,41 +35,42 @@ RPG Fighter is a app for tabletop roleplaying game Dungeon Masters or players th
 
     - Function prints a welcome message and instructions, then takes input of user_npc and while loop checks that 6 inputs are made matching the pre-existing list of NPCs.
 
-![screenshot](documentation/images/feature01.png)
-![screenshot](documentation/images/feature01.1.png)
-![screenshot](documentation/images/feature01.2.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature01.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature01.1.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature01.2.png)
 
 - **Validate Data**
 
     - Inside the try, function raises ValueError if there aren't exactly 6 values 
 
-![screenshot](documentation/imagesfeature02.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature02.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature02.1.png)
 
 - **Update NPC Worksheet**
 
     - Function takes character_race list and adds it to worksheet as a new row.
 
-![screenshot](documentation/images/feature03.png)
-![screenshot](documentation/imagesfeature03.1.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature03.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature03.1.png)
 
 - **Get Last Entry Character Race**
 
     - Function collects last row of data from NPCs worksheet and returns the data as a list.
 
-![screenshot](documentation/images/feature04.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature04.png)
 
 - **Display State**
 
     - Function prints stats for each NPC in an easily readable format.
 
-![screenshot](documentation/images/feature05.png)
-![screenshot](documentation/imagesfeature05.1.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature05.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature05.1.png)
 
 - **Main**
 
     - Runs all program functions.
 
-![screenshot](documentation/images/feature06.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/feature06.png)
 
 ### Future Features
 
