@@ -1,6 +1,6 @@
 # RPG FIGHTER
 
-![Device Mockup Image](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/Device_Mock_Up.PNG)
+![Device Mockup Image](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/mockup.png)
 
 # Table of Contents
 1. [Intro](#intro)
