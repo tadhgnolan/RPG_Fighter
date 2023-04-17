@@ -100,13 +100,7 @@ RPG Fighter is a app for tabletop roleplaying game Dungeon Masters or players th
 
 ### Flowchart
 
-To follow best practice, a flowchart was created for the app's logic,
-and mapped out before coding began using a free version of
-[Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning) and/or [Draw.io](https://www.draw.io).
-
-Below is the flowchart of the main process of this Python program. It shows the entire cycle of the program.
-
-![screenshot](documentation/flowchart.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/flowchart.png)
 
 ### Classes & Functions
 
