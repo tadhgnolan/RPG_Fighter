@@ -4,7 +4,7 @@
 ![RPG Fighter live example](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/demo.gif)
 # Table of Contents
 1. [Intro](#intro)
-2. [Technologies](#Tools & Technologies Used)
+2. [Technologies](#Technologies)
 3. [Features](#features)
 4. [Testing](#testing)
 5. [Credits](#credits)
@@ -87,7 +87,7 @@ RPG Fighter is a app for tabletop roleplaying game Dungeon Masters or players th
 - Fight
     - Functions that allow Player Character to fight NPC through application of random dice rolls and their interaction with a clearly defined ruleset.
 
-## Tools & Technologies Used
+## Technologies
 
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
