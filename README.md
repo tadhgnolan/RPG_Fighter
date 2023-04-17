@@ -155,6 +155,13 @@ I've used the following Python packages and/or external imported packages.
 ![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/unittest1.png)
 ![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/unittest2.png)
 
+## Bugs
+
+- Pep 8: Removed all linting errors except for inconsequential ones relating to ASCII art and error code.
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/pep8.png)
+
+- There are no remaining bugs that I am aware of.
+
 ## Deployment
 
 Code Institute has provided a [template](https://github.com/Code-Institute-Org/python-essentials-template) to display the terminal view of this backend application in a modern web browser.
