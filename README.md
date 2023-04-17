@@ -137,6 +137,7 @@ I've used the following Python packages and/or external imported packages.
 
 - `gspread`: used with the Google Sheets API
 - `google.oauth2.service_account`: used for the Google Sheets API credentials
+- `unittest`: used with the unittest API
 
 ## Testing
 
