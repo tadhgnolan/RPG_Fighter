@@ -252,6 +252,7 @@ You can fork this repository by using the following steps:
 | [Editor.md](https://pandao.github.io/editor.md/index.html) | README.MD| open source online Markdown Editor |
 | [Code Institute](https://github.com/Code-Institute-Solutions/love-sandwiches-p5-sourcecode/tree/master/05-deployment/01-deployment-part-1) | rpg_fighter.py | Love Sandwitches repo on Github
 | [Juan Carlos Paco](https://gist.github.com/juancarlospaco/040fbe326631e638f2a540fe8c1f2092) | test_rpg_fighter.py | unittest doctests template |
+| [D&D Dungeon Master's Guide](https://dnd.wizards.com/products/dungeon-masters-guide) | rpg_fighter.py | NPC details |
 
 ### Media
 | Source | Location |
