@@ -29,9 +29,9 @@ RPG Fighter is a app for tabletop roleplaying game Dungeon Masters or players th
 
 ## Wireframes
 
-![wireframe1]()
-![wireframe2]()
-![wireframe3]()
+![wireframe1](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/wf1.png)
+![wireframe2](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/wf2.png)
+![wireframe3](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/wf3.png)
 
 ## Features
 
