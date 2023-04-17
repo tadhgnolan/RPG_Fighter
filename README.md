@@ -260,4 +260,4 @@ You can fork this repository by using the following steps:
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 - I would like to thank my partner Rossana, for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my brother Cormac, working developer, for his help reviewing the project.
+- I would like to thank my brother Cormac, a working developer, for his help reviewing the project.
