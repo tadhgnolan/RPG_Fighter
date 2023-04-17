@@ -37,6 +37,7 @@ def get_character_race():
         print("#   \\\//   #")  # noqa
         print("#   (OO)   #")
         print("#    \/    #")  # noqa
+        print("RPG Fighter, a tabletop RPG tool by Tadhg Nolan")
         print("Please enter NPC character race.")
         print("Data should be 6 npc race names.")
         print(
