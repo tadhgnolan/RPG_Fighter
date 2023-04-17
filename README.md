@@ -2,6 +2,7 @@
 
 ![Device Mockup Image](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/mockup.png)
 ![RPG Fighter live example](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/demo.gif)
+[Link to live app!](https://rpg-fighter.herokuapp.com/)
 # Table of Contents
 1. [Intro](#intro)
 2. [Technologies](#Technologies)
@@ -19,13 +20,13 @@ RPG Fighter is a app for tabletop roleplaying game Dungeon Masters or players th
 
 ## User Stories
 
-### New Site Users
+### New Users
 
-- As site user, I would like clear instructions on how to use the app.
-- As a site user, I would like to be able to input a selection of Non-Player-Characters (NPCs).
-- As a site user, I would like confirmation that the worksheet has been updated with the data I've entered, so that I can be sure I will receive the correct response.
-- As a site user, I would like to see the full list of details for the NPC names that I've entered, so that I can take note of them for the game I'm planning.
-- As a site user, I would like to be asked if I wish to continue, so that I can either start again or exit the app.
+- As user, I would like clear instructions on how to use the app.
+- As a  user, I would like to be able to input a selection of Non-Player-Characters (NPCs).
+- As a user, I would like confirmation that the worksheet has been updated with the data I've entered, so that I can be sure I will receive the correct response.
+- As a user, I would like to see the full list of details for the NPC names that I've entered, so that I can take note of them for the game I'm planning.
+- As a user, I would like to be asked if I wish to continue, so that I can either start again or exit the app.
 
 ## Wireframes
 
