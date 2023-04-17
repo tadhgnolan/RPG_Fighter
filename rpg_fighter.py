@@ -107,7 +107,7 @@ def update_npc_worksheet(data):
     print("NPC worksheet updated successfully.\n")
 
 
-def get_last_entry_characer_race(npc):
+def get_last_entry_character_race(npc):
     """
     Collect last row of data from NPCs worksheet returning the data as a list
     """
@@ -146,7 +146,7 @@ def main():
         data = get_character_race()
         update_npc_worksheet(data)
         for npc in data:
-            get_last_entry_characer_race(npc)
+            get_last_entry_character_race(npc)
         display_stats()
         check = input(
             "Do you wish to quit or start again?"

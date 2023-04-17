@@ -4,7 +4,7 @@
 ![RPG Fighter live example](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/demo.gif)
 # Table of Contents
 1. [Intro](#intro)
-2. [Technologies](#technologies)
+2. [Technologies](#Tools & Technologies Used)
 3. [Features](#features)
 4. [Testing](#testing)
 5. [Credits](#credits)
@@ -26,6 +26,12 @@ RPG Fighter is a app for tabletop roleplaying game Dungeon Masters or players th
 - As a site user, I would like confirmation that the worksheet has been updated with the data I've entered, so that I can be sure I will receive the correct response.
 - As a site user, I would like to see the full list of details for the NPC names that I've entered, so that I can take note of them for the game I'm planning.
 - As a site user, I would like to be asked if I wish to continue, so that I can either start again or exit the app.
+
+## Wireframes
+
+![wireframe1]()
+![wireframe2]()
+![wireframe3]()
 
 ## Features
 
