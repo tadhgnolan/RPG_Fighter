@@ -142,7 +142,13 @@ I've used the following Python packages and/or external imported packages.
 ## Testing
 
 - Manual testing of user inputs.
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/manual_test1.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/manual_test2.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/manual_test3.png)
+
 - Automated testing of validate function with Unittest.
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/unittest1.png)
+![screenshot](https://github.com/tadhgnolan/RPG_Fighter/blob/main/documentation/images/unittest2.png)
 
 ## Deployment
 
