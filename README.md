@@ -95,6 +95,9 @@ RPG Fighter is a app for tabletop roleplaying game Dungeon Masters or players th
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Google_Docs](https://docs.google.com/) used to host the data used in the app.
+- [MockIt App](https://mockittapp.wondershare.com/) used to create wireframes.
+- [Lucid App](https://lucid.app/) used to create flowchart.
+
 
 ## Data Model
 

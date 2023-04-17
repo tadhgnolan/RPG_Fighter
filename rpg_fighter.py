@@ -38,7 +38,7 @@ def get_character_race():
         print("#   (OO)   #")
         print("#    \/    #")  # noqa
         print("Please enter NPC character race.")
-        print("Data should be 6 DnD race names.")
+        print("Data should be 6 npc race names.")
         print(
             "Example: orc, goblin, halfling, troll, "
             + "dwarf, skeleton, elf, human\n"
