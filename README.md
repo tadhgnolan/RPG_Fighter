@@ -81,11 +81,11 @@ RPG Fighter is a app for tabletop roleplaying game Dungeon Masters or players th
 ### Future Features
 
 - Random Player Character Generator
-    - Creates a player character with a random set of stats.
+    - Creates a player character with a random set of stats to aid new players.
 - Random NPC Generator
-    - Creates an NPC with a ranpm set of stats
+    - Creates an NPC with a random set of stats to allow Dungeon Master to quickly create opponents for their players.
 - Fight
-    - Functions that allow Player Character to fight NPC through application of random dice rolls and their interaction with a clearly defined ruleset.
+    - Functions that allow Player Character to fight NPC through application of random dice rolls and their interaction with a clearly defined ruleset with the eventual aim of using the existing functionality of the app as one element of a text based game.
 
 ## Technologies
 
